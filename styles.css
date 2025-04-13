@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+header {
+	text-align: center;
+	font-family: Irish Grover, system-ui;
+}
+
+h2 {
+	text-align: center;
+	font-family: Georgia, serif;
+}
+
+h3 {
+	text-align: center;
+	font-family: Montserrat, sans-serif;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+    background-color: #CAE0E8;
+    margin: 20px;
+    padding: 20px;
+	line-height: 1.5;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+	text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #E74C3C;
+    color: white;
+}
+
+nav a:active {
+    background-color: #E74C3C;
+    color: white;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #E74C3C;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links li a:hover {
+    color: #d2691e;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: white;
+}
+
+.feature-card {
+    width: 250px;
+    text-align: center;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.popular-restaurants {
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.restaurant-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.restaurant-info {
+    padding: 1rem;
+}
+
+.rating {
+    color: #f1c40f;
+}
+
+.delivery-options {
+	text-align: center;
+}
+
+.delivery-card img {
+	width: 300px;
+	height: auto;
+}
+
+.tracking-form {
+	align-content: center;
+	text-align: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-section {
+    padding: 40px 20px;
+}
+
+.products-grid {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+	padding: 20px;
+}
+
+.product-title {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+}
+
+.product-item {
+    display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: space-between;
+    gap: 20px;
+    background-color: #E74C3C;
+    padding: 20px;
+    border-radius: 20px;
+	width: 1600px;
+	height: 400px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+	box-sizing: border-box;
+}
+
+.product-item:hover {
+    background-color: #ffb875;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	font-family: Montserrat, sans-serif;
+}
+
+.product-image {
+    width: 240px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+	margin-bottom: 15px
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+.product-details p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.restaurant-image {
+    width: 240px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+	margin-bottom: 15px
+}
+
+.restaurant-image:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  header, main, footer {
+    padding: 10px;
+  }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #E74C3C;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  width: 130px;
+  text-align: center;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-menu li {
+  padding: 6px 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 6px 0;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+  background: #E74C3C;
+  border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+iframe {
+	align-content: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Montserrat, sans-serif;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.products-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slides {
+    display: flex;
+    width: 6000px;
+    animation: slide 30s linear infinite;
+}
+
+.slides img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-3000px); }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery - Website Project</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        <h1>FoodExpress</h1>
+    </header>
+    <nav>
+		<ul class="navigation">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="products1.html">Restaurants</a></li>
+			<li class="dropdown">
+				<a href="products2.html">Cuisines</a>
+				<ul class="dropdown-menu">
+					<li><a href="#pizzas">Pizza</a></li>
+					<li><a href="#meals">Meals</a></li>
+					<li><a href="#burgers">Burgers</a></li>
+					<li><a href="#desserts">Desserts</a></li>
+					<li><a href="#beverages">Beverages</a></li>
+				</ul>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="order.html">Order</a></li>
+			<li><a href="delivery.html">Delivery</a></li>
+		</ul>
+	</nav>
+    
+    <section class="delivery-hero">
+        <h2>Fast Food Delivery to Your Doorstep</h2>
+        <p style="text-align: center;">Get your favorite meals delivered in 30 minutes or less!</p>
+    
+    <div class="delivery-container">
+        <h2>Delivery Options</h2>
+        
+        <div class="delivery-options">
+            <div class="delivery-card">
+                <div class="delivery-info">
+                    <h3>Standard Delivery</h3>
+					<img src="images/standard-delivery.jpg" alt="Standard Delivery">
+                    <div class="delivery-time">30-45 minutes</div>
+                    <div class="delivery-fee">Delivery fee: ₱49</div>
+                    <p>Perfect when you're not in a hurry!</p>
+                </div>
+            </div>
+            
+            <div class="delivery-card">
+                <div class="delivery-info">
+                    <h3>Express Delivery</h3>
+					<img src="images/express-delivery.jpg" alt="Express Delivery">
+                    <div class="delivery-time">15-30 minutes</div>
+                    <div class="delivery-fee">Delivery fee: ₱79</div>
+                    <p>For when you're really hungry now!</p>
+                </div>
+            </div>
+            
+            <div class="delivery-card">
+                <div class="delivery-info">
+                    <h3>Scheduled Delivery</h3>
+					<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Scheduled Delivery">
+                    <div class="delivery-time">At your preferred time</div>
+                    <div class="delivery-fee">Delivery fee: ₱39</div>
+                    <p>Plan your meals in advance!</p>
+                </div>
+            </div>
+        </div>
+        
+        <section>
+		<div class="tracking-form">
+            <h2>Track Your Delivery</h2>
+            <form id="trackingForm">
+                <div class="form-group">
+                    <label for="orderNumber">Order Number</label>
+                    <input type="text" id="orderNumber" placeholder="Enter your order number" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" placeholder="Enter your registered phone number" required>
+                </div>
+                <button type="submit">Track Order</button>
+            </form>
+        </div>
+        </section>
+			
+        <div class="delivery-info">
+            <h2>Delivery Areas</h2>
+            <p>We currently deliver to these locations:</p>
+            <ul>
+                <li>Manila City (all districts)</li>
+                <li>Makati CBD</li>
+                <li>Quezon City (selected areas)</li>
+                <li>Taguig (Bonifacio Global City)</li>
+                <li>Pasig (Ortigas Center)</li>
+            </ul>
+            <p>Check our <a href="locations.html">locations page</a> for more details.</p>
+        </div>
+    </div>
+		
+	</section>
+    
+    <footer>
+        <ul class="social-links">
+			<li>
+				<a href="https://www.facebook.com/johannezekiel.rondilla/">
+					<img src="images/facebook_logo.png" alt="Facebook" width="40" height="40">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/ez__kiel/">
+					<img src="images/instagram_logo.png" alt="Instagram" width="40" height="40">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/johann-ezekiel-rondilla-73b06035b/">
+					<img src="images/linkedin%20logo.png" alt="X" width="40" height="40">
+				</a>
+			</li>
+		</ul>
+
+        <p>&copy; 2025 FoodExpress</p>
+        <p>Created by Johann Ezekiel Rondilla and Vince Ibarbia</p>
+    </footer>
+    
+    <script>
+        document.getElementById('trackingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your delivery status will be displayed here in a real application.');
+            // In a real app, this would fetch delivery status from server
+        });
+    </script>
+</body>
+</html>

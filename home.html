@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>FoodExpress</h1>
+    </header>
+    <nav>
+		<ul class="navigation">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="products1.html">Restaurants</a></li>
+			<li class="dropdown">
+				<a href="products2.html">Cuisines</a>
+				<ul class="dropdown-menu">
+					<li><a href="#pizzas">Pizza</a></li>
+					<li><a href="#meals">Meals</a></li>
+					<li><a href="#burgers">Burgers</a></li>
+					<li><a href="#desserts">Desserts</a></li>
+					<li><a href="#beverages">Beverages</a></li>
+				</ul>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="order.html">Order</a></li>
+			<li><a href="delivery.html">Delivery</a></li>
+		</ul>
+	</nav>
+    
+    <section id="home">
+        <div class="hero">
+            <h2>Your Favorite Food, Delivered Fast</h2>
+            <p>Order from the best restaurants in your area</p>
+			
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter your delivery address">
+                    <button>Find Food</button>
+                </div>
+            </div>
+        </div>
+		
+		<div class="slider">
+  			<div class="slides">
+    			<img src="products/pepperoni_pizza_standard.jpg" alt="pepperoni-pizza">
+    			<img src="products/hawaiian-pizza.png" alt="hawaiian-pizza">
+    			<img src="products/adobo.jpg" alt="adobo">
+				<img src="products/sinigang-beef.jpg" alt="sinigang">
+				<img src="products/cheeseburger.jpg" alt="cheeseburger">
+				<img src="products/double-patty-burger.jpg" alt="double-patty-burger">
+				<img src="products/halo-halo.jpg" alt="halo-halo">
+				<img src="products/buko-pandan.png" alt="buko-pandan">
+				<img src="products/milk-tea.jpg" alt="milk-tea">
+				<img src="products/iced-tea.jpg" alt="iced-tea">
+  			</div>
+		</div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Fast Delivery</h3>
+                <p>Get your food in 30 minutes or less</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-utensils"></i>
+                <h3>100+ Restaurants</h3>
+                <p>Discover new favorites near you</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tag"></i>
+                <h3>Great Deals</h3>
+                <p>Daily discounts and special offers</p>
+            </div>
+        </div>
+        
+        <div class="popular-restaurants">
+            <h2>Popular Restaurants Near You</h2>
+            <div class="restaurant-grid">
+                <div class="restaurant-card">
+                    <div class="restaurant-img" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5');"></div>
+                    <div class="restaurant-info">
+                        <h3>Burger Palace</h3>
+                        <div class="rating">
+                            ★★★★☆ (4.2) • American • $$
+                        </div>
+                        <p>20-30 min • Free delivery</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-img" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38');"></div>
+                    <div class="restaurant-info">
+                        <h3>Pizza Heaven</h3>
+                        <div class="rating">
+                            ★★★★☆ (4.0) • Italian • $$
+                        </div>
+                        <p>15-25 min • ₱49 delivery</p>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-img" style="background-image: url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b');"></div>
+                    <div class="restaurant-info">
+                        <h3>Sushi World</h3>
+                        <div class="rating">
+                            ★★★★★ (4.7) • Japanese • $$$
+                        </div>
+                        <p>30-45 min • ₱79 delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section id="gallery">
+		<h2>Food Preview</h2>
+		<p>Take a closer look at some of our best-selling products! Click on an image to enlarge it.</p>
+		
+		<div class="gallery-grid">
+            <a href="products/pepperoni_pizza_standard.jpg" data-lightbox="gallery" data-title="Pepperoni Pizza">
+                <img src="products/pepperoni_pizza_standard.jpg" alt="Pepperoni Pizza" class="gallery-image">
+            </a>
+
+            <a href="products/adobo.jpg" data-lightbox="gallery" data-title="Adobo">
+                <img src="products/adobo.jpg" alt="Adobo" class="gallery-image">
+            </a>
+
+            <a href="products/pancit-canton.jpg" data-lightbox="gallery" data-title="Pancit Canton">
+                <img src="products/pancit-canton.jpg" alt="Pancit Canton" class="gallery-image">
+            </a>
+
+            <a href="products/cheeseburger.jpg" data-lightbox="gallery" data-title="Cheeseburger">
+                <img src="products/cheeseburger.jpg" alt="Cheeseburger" class="gallery-image">
+            </a>
+
+            <a href="products/halo-halo.jpg" data-lightbox="gallery" data-title="Halo-Halo">
+                <img src="products/halo-halo.jpg" alt="Halo-Halo" class="gallery-image">
+            </a>
+
+            <a href="products/bottled-water.jpg" data-lightbox="gallery" data-title="Bottled Water">
+                <img src="products/bottled-water.jpg" alt="Bottled Water" class="gallery-image">
+            </a>
+
+            <a href="products/buko-pandan.png" data-lightbox="gallery" data-title="Buko Pandan">
+                <img src="products/buko-pandan.png" alt="Buko Pandan" class="gallery-image">
+            </a>
+
+            <a href="products/milk-tea.jpg" data-lightbox="gallery" data-title="Milk Tea">
+                <img src="products/milk-tea.jpg" alt="Milk Tea" class="gallery-image">
+            </a>
+
+            <a href="products/iced-tea.jpg" data-lightbox="gallery" data-title="Iced Tea">
+                <img src="products/iced-tea.jpg" alt="Iced Tea" class="gallery-image">
+            </a>
+
+            <a href="products/leche-flan.png" data-lightbox="gallery" data-title="Leche Flan">
+                <img src="products/leche-flan.png" alt="Leche Flan" class="gallery-image">
+            </a>
+        </div>
+	
+	</section>
+    
+    <footer>
+        <ul class="social-links">
+			<li>
+				<a href="https://www.facebook.com/johannezekiel.rondilla/">
+					<img src="images/facebook_logo.png" alt="Facebook" width="40" height="40">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/ez__kiel/">
+					<img src="images/instagram_logo.png" alt="Instagram" width="40" height="40">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/johann-ezekiel-rondilla-73b06035b/">
+					<img src="images/linkedin%20logo.png" alt="X" width="40" height="40">
+				</a>
+			</li>
+		</ul>
+
+        <p>&copy; 2025 FoodExpress</p>
+        <p>Created by Johann Ezekiel Rondilla and Vince Ibarbia</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	
+	<script src="https://unpkg.com/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+	
+	<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
+	</script>
+</body>
+</html>

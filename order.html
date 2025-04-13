@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Website Project</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>FoodExpress</h1>
+    </header>
+    <nav>
+		<ul class="navigation">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="products1.html">Restaurants</a></li>
+			<li class="dropdown">
+				<a href="products2.html">Cuisines</a>
+				<ul class="dropdown-menu">
+					<li><a href="#pizzas">Pizza</a></li>
+					<li><a href="#meals">Meals</a></li>
+					<li><a href="#burgers">Burgers</a></li>
+					<li><a href="#desserts">Desserts</a></li>
+					<li><a href="#beverages">Beverages</a></li>
+				</ul>
+			</li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="order.html">Order</a></li>
+			<li><a href="delivery.html">Delivery</a></li>
+		</ul>
+	</nav>
+    
+    <section id="order-form">
+	<div class="order-container">
+        <h2>Place Your Order</h2>
+        
+        <form class="contact-form" id="orderForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group full-width">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group full-width">
+                <label>Select Products</label>
+                <div class="product-list">
+                    <div class="products-item">
+                        <input type="checkbox" id="product1" name="products" value="Product 1">
+                        <label for="product1">Pepperoni Pizza - ₱600.00</label>
+                        <input type="number" name="product1_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+                    <div class="products-item">
+                        <input type="checkbox" id="product2" name="products" value="Product 2">
+                        <label for="product2">Hawaiian Pizza - ₱550.00</label>
+                        <input type="number" name="product2_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product3" name="products" value="Product 3">
+                        <label for="product3">Meat Lover's Pizza - ₱650.00</label>
+                        <input type="number" name="product3_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product4" name="products" value="Product 4">
+                        <label for="product4">Four Cheese Pizza - ₱600	.00</label>
+                        <input type="number" name="product4_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product5" name="products" value="Product 5">
+                        <label for="product5">Supreme Pizza - ₱700.00</label>
+                        <input type="number" name="product5_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product6" name="products" value="Product 6">
+                        <label for="product6">Sinigang - ₱70.00</label>
+                        <input type="number" name="product6_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product7" name="products" value="Product 7">
+                        <label for="product7">Chicken Inasal - ₱150.00</label>
+                        <input type="number" name="product7_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product8" name="products" value="Product 8">
+                        <label for="product8">Pancit Canton - ₱150.00</label>
+                        <input type="number" name="product8_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product9" name="products" value="Product 9">
+                        <label for="product9">Adobo - ₱100.00</label>
+                        <input type="number" name="product9_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product10" name="products" value="Product 10">
+                        <label for="product10">Cheeseburger - ₱70.00</label>
+                        <input type="number" name="product10_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product11" name="products" value="Product 11">
+                        <label for="product11">Bacon Cheeseburger - ₱85.00</label>
+                        <input type="number" name="product11_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product12" name="products" value="Product 12">
+                        <label for="product12">Double Patty Burger - ₱100.00</label>
+                        <input type="number" name="product12_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product13" name="products" value="Product 13">
+                        <label for="product13">Chicken Sandwich - ₱115.00</label>
+                        <input type="number" name="product13_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product14" name="products" value="Product 14">
+                        <label for="product14">Halo-Halo - ₱120.00</label>
+                        <input type="number" name="product14_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product15" name="products" value="Product 15">
+                        <label for="product15">Leche Flan (1 slice) - ₱40.00</label>
+                        <input type="number" name="product15_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product16" name="products" value="Product 16">
+                        <label for="product16">Leche Flan (whole) - ₱250.00</label>
+                        <input type="number" name="product16_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product17" name="products" value="Product 17">
+                        <label for="product17">Cassava Cake - ₱80.00</label>
+                        <input type="number" name="product17_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product18" name="products" value="Product 18">
+                        <label for="product18">Sans Rival (1 slice) - ₱70.00</label>
+                        <input type="number" name="product18_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product19" name="products" value="Product 19">
+                        <label for="product19">Sans Rival (whole) - ₱720.00</label>
+                        <input type="number" name="product19_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product20" name="products" value="Product 20">
+                        <label for="product20">Bottled Water - ₱25.00</label>
+                        <input type="number" name="product20_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product21" name="products" value="Product 21">
+                        <label for="product21">Iced Tea - ₱50.00</label>
+                        <input type="number" name="product21_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product22" name="products" value="Product 22">
+                        <label for="product22">Buko Juice - ₱55.00</label>
+                        <input type="number" name="product22_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+					<div class="products-item">
+                        <input type="checkbox" id="product23" name="products" value="Product 23">
+                        <label for="product23">Milk Tea - ₱80.00</label>
+                        <input type="number" name="product23_qty" min="1" value="1" style="width: 60px; margin-left: 10px;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="delivery">Delivery Method</label>
+                <select id="delivery" name="delivery">
+                    <option value="standard">Standard Delivery (3-5 days)</option>
+                    <option value="express">Express Delivery (1-2 days)</option>
+                    <option value="pickup">Store Pickup</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment">
+                    <option value="credit">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+            </div>
+            
+            <div class="form-group full-width">
+                <label for="notes">Special Instructions</label>
+                <textarea id="notes" name="notes" rows="2"></textarea>
+            </div>
+            
+            <div class="form-group full-width">
+                <button type="submit">Place Order</button>
+            </div>
+        </form>
+        
+        <div class="order-summary" style="text-align: center;">
+            <h3>Order Summary</h3>
+            <p>Items: <span id="itemCount">0</span></p>
+            <p>Subtotal: ₱<span id="subtotal">0.00</span></p>
+            <p>Delivery: ₱<span id="deliveryFee">0.00</span></p>
+            <p><strong>Total: ₱<span id="total">0.00</span></strong></p>
+        </div>
+    </div>
+	</section>
+    
+    <footer>
+        <ul class="social-links">
+			<li>
+				<a href="https://www.facebook.com/johannezekiel.rondilla/">
+					<img src="images/facebook_logo.png" alt="Facebook" width="40" height="40">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/ez__kiel/">
+					<img src="images/instagram_logo.png" alt="Instagram" width="40" height="40">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/johann-ezekiel-rondilla-73b06035b/">
+					<img src="images/linkedin%20logo.png" alt="X" width="40" height="40">
+				</a>
+			</li>
+		</ul>
+
+        <p>&copy; 2025 Website Project</p>
+        <p>Created by Johann Ezekiel Rondilla and Vince Ibarbia</p>
+    </footer>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('change', function() {
+            let itemCount = 0;
+            let subtotal = 0;
+            
+            if (document.getElementById('product1').checked) {
+                const qty = parseInt(document.getElementsByName('product1_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 600.00;
+            }
+            if (document.getElementById('product2').checked) {
+                const qty = parseInt(document.getElementsByName('product2_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 550.00;
+            }
+			if (document.getElementById('product3').checked) {
+                const qty = parseInt(document.getElementsByName('product3_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 650.00;
+            }
+			if (document.getElementById('product4').checked) {
+                const qty = parseInt(document.getElementsByName('product4_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 600.00;
+            }
+			if (document.getElementById('product5').checked) {
+                const qty = parseInt(document.getElementsByName('product5_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 700.00;
+            }
+			if (document.getElementById('product6').checked) {
+                const qty = parseInt(document.getElementsByName('product6_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 70.00;
+            }
+			if (document.getElementById('product7').checked) {
+                const qty = parseInt(document.getElementsByName('product7_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 150.00;
+            }
+			if (document.getElementById('product8').checked) {
+                const qty = parseInt(document.getElementsByName('product8_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 150.00;
+            }
+			if (document.getElementById('product9').checked) {
+                const qty = parseInt(document.getElementsByName('product9_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 100.00;
+            }
+			if (document.getElementById('product10').checked) {
+                const qty = parseInt(document.getElementsByName('product10_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 70.00;
+            }
+			if (document.getElementById('product11').checked) {
+                const qty = parseInt(document.getElementsByName('product11_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 85.00;
+            }
+			if (document.getElementById('product12').checked) {
+                const qty = parseInt(document.getElementsByName('product12_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 100.00;
+            }
+			if (document.getElementById('product13').checked) {
+                const qty = parseInt(document.getElementsByName('product13_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 115.00;
+            }
+			if (document.getElementById('product14').checked) {
+                const qty = parseInt(document.getElementsByName('product14_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 120.00;
+            }
+			if (document.getElementById('product15').checked) {
+                const qty = parseInt(document.getElementsByName('product15_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 40.00;
+            }
+			if (document.getElementById('product16').checked) {
+                const qty = parseInt(document.getElementsByName('product16_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 250.00;
+            }
+			if (document.getElementById('product17').checked) {
+                const qty = parseInt(document.getElementsByName('product17_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 80.00;
+            }
+			if (document.getElementById('product18').checked) {
+                const qty = parseInt(document.getElementsByName('product18_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 70.00;
+            }
+			if (document.getElementById('product19').checked) {
+                const qty = parseInt(document.getElementsByName('product19_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 720.00;
+            }
+			if (document.getElementById('product20').checked) {
+                const qty = parseInt(document.getElementsByName('product20_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 25.00;
+            }
+			if (document.getElementById('product21').checked) {
+                const qty = parseInt(document.getElementsByName('product21_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 50.00;
+            }
+			if (document.getElementById('product22').checked) {
+                const qty = parseInt(document.getElementsByName('product22_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 55.00;
+            }
+			if (document.getElementById('product23').checked) {
+                const qty = parseInt(document.getElementsByName('product23_qty')[0].value);
+                itemCount += qty;
+                subtotal += qty * 80.00;
+            }
+            
+            const deliveryMethod = document.getElementById('delivery').value;
+            let deliveryFee = 0;
+            if (deliveryMethod === 'standard') deliveryFee = 5.99;
+            if (deliveryMethod === 'express') deliveryFee = 9.99;
+            
+            document.getElementById('itemCount').textContent = itemCount;
+            document.getElementById('subtotal').textContent = subtotal.toFixed(2);
+            document.getElementById('deliveryFee').textContent = deliveryFee.toFixed(2);
+            document.getElementById('total').textContent = (subtotal + deliveryFee).toFixed(2);
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your order! We will process it shortly.');
+        });
+    </script>
+</body>
+</html>
